@@ -1,0 +1,16 @@
+
+<div class="card-container">
+  <div [appHoverBorder]="'#1E90FF'" class="evento-card">
+    <h3>{{ titulo }}</h3>
+    <p><strong>Data:</strong> {{ data }}</p>
+    <p><strong>Horário:</strong> {{ horario }}</p>
+    <p><strong>Local:</strong> {{ local }}</p>
+    <button (click)="agendarProgramacao(titulo, indice)">
+      Participar
+    </button>
+  </div>
+
+  @if (mensagem && indice === indiceItem) {
+    <p class="message">{{mensagem}}</p>
+  }
+</div>

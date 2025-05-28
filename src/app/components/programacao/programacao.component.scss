@@ -1,0 +1,18 @@
+.evento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Ajusta a quantidade de colunas automaticamente */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px;
+  justify-items: center; /* Centraliza os cards dentro das colunas */
+}
+
+app-evento-card {
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #2a2a2a;
+
+}

@@ -1,0 +1,14 @@
+
+<div class="evento-grid" id="programacao">
+  @for (evento of eventos; track $index) {
+      <app-evento-card
+        [titulo]="evento.titulo"
+        [data]="evento.data"
+        [horario]="evento.horario"
+        [local]="evento.local"
+        [indice]="$index"
+      />
+  }
+</div>
+
+
